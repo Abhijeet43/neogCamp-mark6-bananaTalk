@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,400;1,700&display=swap');
+:root{
+  --primary-color: #F2C94C;
+  --black-color: #333;
+  --width-break: 600px;
+  --hover-color: #efbb1c;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Comic Neue', cursive;
+  margin:0;
+}
+
+
+body{
+  color: var(--black-color);
+}
+
+nav,footer{
+  background: var(--primary-color);
+  width: 100%;
+}
+
+nav{
+  text-align:center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.image-container{
+  text-align: center;
+}
+
+.minion-image{
+  width:10rem;
+  height:15rem;
+}
+
+main{
+  margin: auto;
+  padding: 1rem;
+  max-width: var(--width-break);
+}
+
+#translate-input,#translate-ouput{
+  width:80%;
+  height:10vh;
+  margin:1rem;
+  padding: 1rem;
+
+}
+
+#translate-input{
+  display: block;
+  font-size: large;
+  margin-top: 2rem;
+  min-height: 20vh;
+}
+
+#translate-button{
+  background: var(--primary-color);
+  border:none;
+  border-radius: 2rem;
+  margin: .5rem .5rem;
+  padding: 1rem 2rem;
+  font-size: large;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+#translate-button:hover{
+  background: var(--hover-color);
+  color: #fff;
+}
+
+#translate-output-title{
+  margin-left: 1rem;
+}
+
+#translate-ouput{
+  border:1px solid var(--black-color);
+  width: 100%;
+  min-height: 10vh;
+  max-height: 20vh;
+  overflow: scroll;
+}
+
+footer{
+  position: relative;
+  bottom:0;
+  width:100%;
+  padding: .5rem;
+  background: var(--primary-color);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.social-icons a{
+  color:black;
+  font-size:1rem;
+  padding:.5rem;
+  margin-top: 1rem;
+}
